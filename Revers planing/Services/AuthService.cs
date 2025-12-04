@@ -25,7 +25,7 @@ public class AuthService : IAuthService
         
         if (existingUser != null)
         {
-            throw new InvalidOperationException("нельзя использовать такой емаил");
+            throw new InvalidOperationException("нельзя использовать такой емаил, он занят");
         }
 
         var hashedPassword = _passwordHasher.Generate(password);
