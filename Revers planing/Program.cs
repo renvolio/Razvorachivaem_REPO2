@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Revers_planing.Data;
+using Revers_planing.Extensions;
 using Revers_planing.Services;
 
 namespace Revers_planing;
@@ -16,6 +17,8 @@ public class Program
 
         builder.Services.Configure<JwtOptions>(
             builder.Configuration.GetSection("JwtOptions"));
+
+        builder.Services.AddJwtAuthentication(builder.Configuration);
 
         builder.Services.AddScoped<IJWTProvider, JWTProvider>();
         builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
@@ -37,8 +40,9 @@ public class Program
 
         app.UseHttpsRedirection();
 
+        app.UseAuthentication();
         app.UseAuthorization();
-
+       
         app.MapControllers();
 
         app.Run();

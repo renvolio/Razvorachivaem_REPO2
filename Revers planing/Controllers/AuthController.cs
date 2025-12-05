@@ -23,9 +23,11 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] LoginDTO dto)
+    public async Task<IActionResult> Login([FromBody] LoginDTO dto, HttpContext context)
     {
         var token = await _authService.Login(dto.Email, dto.Password);
+        context.Response.Cookies.Append("cookie", token); 
+
         return Ok(new { token });
     }
 }

@@ -26,7 +26,7 @@ public class ApplicationDbContext : DbContext
             .HasDiscriminator<string>("UserType")
             .HasValue<Student>("Student")
             .HasValue<Teacher>("Teacher");
-        
+
         modelBuilder.Entity<User>()
             .HasIndex(u => u.Email)
             .IsUnique();
