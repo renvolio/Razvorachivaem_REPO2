@@ -34,6 +34,9 @@ public class Program
             options.FallbackPolicy = new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser()
                 .Build();
+            
+            options.AddPolicy("Teacher", policy => policy.RequireRole("Teacher"));
+            options.AddPolicy("Student", policy => policy.RequireRole("Student"));
         });
 
         var app = builder.Build();

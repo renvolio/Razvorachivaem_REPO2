@@ -16,12 +16,13 @@ public class JWTProvider : IJWTProvider
         _options = options.Value;
     }
 
-    public string GenerateToken(User user)
+    public string GenerateToken(User user, string role)
     {
         var claims = new List<Claim>
         {
             new Claim("userId", user.Id.ToString()),
-            new Claim("email", user.Email)
+            new Claim("email", user.Email),
+            new Claim(ClaimTypes.Role, role)
         };
 
         var signingCredentials = new SigningCredentials(

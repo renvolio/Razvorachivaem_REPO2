@@ -4,6 +4,6 @@ namespace Revers_planing.Services;
 
 public interface IJWTProvider
 {
-    string GenerateToken(User user);
+    string GenerateToken(User user,string role);
 }
 

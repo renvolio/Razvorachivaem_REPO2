@@ -61,21 +61,35 @@ public class AuthService : IAuthService
 
     public async Task<string> Login(string email, string password)
     {
-
     // гет бай email
-    var user = await _context.Users.AsNoTracking().
-    FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception("пользователь не найден");
+    var user = await _context.Users.AsNoTracking()
+        .FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception("пользователь не найден");
 
 
     // проверяем пароль 
     var result = _passwordHasher.Verify(password, user.PasswordHash);
 
-    if (result==false)
+    if (result == false)
     {
         throw new Exception("не правильный пароль"); 
     }
-    // генерируем токен
-    var token = _jwtProvider.GenerateToken(user);
+
+    // определяем роль
+    string role;
+    var teacher = await _context.Teachers.AsNoTracking()
+        .FirstOrDefaultAsync(t => t.Id == user.Id);
+    
+    if (teacher != null)
+    {
+        role = "Teacher";
+    }
+    else
+    {
+        role = "Student";
+    }
+
+    // генерируем токен с ролью
+    var token = _jwtProvider.GenerateToken(user, role);
     return token;
     } 
 }

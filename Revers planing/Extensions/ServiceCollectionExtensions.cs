@@ -21,7 +21,8 @@ public static class ServiceCollectionExtensions
                 ValidateAudience = false,
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions!.SecretKey))
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions!.SecretKey)),
+                RoleClaimType = System.Security.Claims.ClaimTypes.Role
             };
             options.Events = new JwtBearerEvents
             {
