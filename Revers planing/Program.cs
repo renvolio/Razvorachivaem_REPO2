@@ -24,6 +24,9 @@ public class Program
         builder.Services.AddScoped<IJWTProvider, JWTProvider>();
         builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
         builder.Services.AddScoped<IAuthService, AuthService>();
+        builder.Services.AddScoped<ISubjectService, SubjectService>();
+        builder.Services.AddScoped<IProjectService, ProjectService>();
+        builder.Services.AddScoped<ITaskService, TaskService>();
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
