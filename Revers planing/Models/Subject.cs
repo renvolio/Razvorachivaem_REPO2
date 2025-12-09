@@ -7,6 +7,7 @@ public class Subject
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
     public string Discription { get; set; } = string.Empty;
+    public List<int> AllowedGroups { get; set; } = [];
 
     public List<Student> Students { get; set; } = new();
     

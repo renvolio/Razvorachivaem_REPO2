@@ -11,7 +11,7 @@ public class UpdateTaskDTO
     public DateTime? StartDate { get; set; }
     public Guid? ProjectId { get; set; }
     public Guid? ParentTaskId { get; set; }
-    public TaskStatus? Status { get; set; }
+    public Models.TaskStatus? Status { get; set; }
     public Guid? ResponsibleStudentId { get; set; }
 }
 

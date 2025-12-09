@@ -21,6 +21,7 @@ public class AuthService : IAuthService
     public async Task<User> Register(string userName, string email, string password, bool isTeacher, string? position = null, int? groupNumber = null)
     {
         var existingUser = await _context.Users
+            .AsNoTracking()
             .FirstOrDefaultAsync(u => u.Email == email);
         
         if (existingUser != null)
@@ -69,6 +70,7 @@ public class AuthService : IAuthService
     public async Task<string> Login(string email, string password, int? groupNumber)
     {
         var user = await _context.Users
+            .AsNoTracking()
             .FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception("пользователь не найден");
 
 

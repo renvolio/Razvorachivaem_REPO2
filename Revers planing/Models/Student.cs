@@ -7,4 +7,5 @@ public class Student : User
     
     public List<Subject> Subjects { get; set; } = new();
     public List<Task_> Tasks { get; set; } = new();
+    public int GroupNumber { get; set; } = 0;
 }
