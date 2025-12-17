@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система Реверсивного Планирования</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Система Реверсивного Планирования (версия брат 2)</h1>
+        <div class="user">
+            <div id="curuser-display" class="curuser-display"></div>
+            <button id="logout-btn" class="logout-btn">Выход</button>
+        </div>
+    </header>
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <h2>Предметы</h2>
+            <select name="subject" id="subject"></select>
+            <button id="view-subject" class="view-btn" style="display: none;">О предмете</button>
+            <button id="add-subject" class="add-btn" style="display: none;">Добавить предмет</button>
+            <button id="add-project" class="add-btn" style="display: none;">Добавить проект</button>
+            <h2>Проекты</h2>
+            <select name="project" id="project"></select>
+            <button id="add-task" class="add-task" style="display: none;">Добавить задачу</button>
+            <div class="status-legend">
+                <h3>Справочник статусов</h3>
+                <div class="legend-item">
+                    <span class="legend-color status-ready"></span>
+                    <span>Готово</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color status-inprogress"></span>
+                    <span>В процессе</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color status-planned"></span>
+                    <span>Запланировано</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color status-expired"></span>
+                    <span>Просрочено</span>
+                </div>
+            </div>
+        </nav>
+        <main id="graph" class="graph">
+            <h2>Граф Зависимостей: <span id="project-name" class="project-name"></span></h2>
+            <div id="graph-container" class="graph-container">
+                <div id="nodes-wrapper" class="nodes-wrapper">
+                    <svg id="lines" class="lines">
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+                            </marker>
+                        </defs>
+                    </svg>
+                    <div id="nodes" class="nodes"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="content">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+        </div>
+    </div>
+    <div id="confirm-modal" class="modal">
+        <div class="content">
+            <h3 id="confirm-title">Подтверждение</h3>
+            <p id="confirm-message"></p>
+            <div style="text-align: right; margin-top: 20px;">
+                <button id="confirm-cancel" class="cancel-btn">Отмена</button>
+                <button id="confirm-ok" class="delete-btn">Подтвердить</button>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

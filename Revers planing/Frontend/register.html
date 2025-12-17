@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css"> 
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form id="registerForm" action="#">
+            <label for="name">Полное имя:</label>
+            <input type="text" id="name" required placeholder="Иванов Иван Иванович">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="example@example.com">
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required minlength="6" placeholder="минимум 6 символов">
+
+            <label for="confirm-password">Повторите пароль:</label>
+            <input type="password" id="confirm-password" required minlength="6">
+            
+            <label for="role">Роль:</label>
+            <select id="role" required>
+                <option value="" disabled selected>Выберите роль</option>
+                <option value="student">Студент / Тимлид</option>
+                <option value="teacher">Преподаватель</option>
+            </select>
+
+            <div id="group-number-group" class="input-group" style="display: none;">
+                <label for="group-number">Номер группы (для студента):</label>
+                <input type="number" id="group-number" min="1" placeholder="Например: 101">
+            </div>
+
+            <div id="position-group" class="input-group" style="display: none;">
+                <label for="position">Должность (для преподавателя):</label>
+                <input type="text" id="position" placeholder="Доцент / Профессор">
+            </div>
+
+            <button type="submit" id="register-btn" class="login">Зарегистрироваться</button>
+            <p id="error" class="error"></p>
+            
+            <p style="margin-top: 15px;">
+                Уже есть аккаунт? <a href="login.html" style="color: blue; text-decoration: none;">Войти</a>
+            </p>
+        </form>
+    </div>
+    <script src="auth.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
