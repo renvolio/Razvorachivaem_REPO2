@@ -9,7 +9,7 @@ const positionInput = document.getElementById("position");
 const groupNumberGroup = document.getElementById("group-number-group");
 const groupNumberInput = document.getElementById("group-number");
 const errorMsg = document.getElementById("error");
-const API_BASE = "/api";
+const API_BASE = "http://194.67.124.204:8080/api";
 
 if (localStorage.getItem("authToken")) 
     window.location.href = "index.html";
