@@ -12,7 +12,7 @@ async function attemptLogin(email, pwd, groupNumber = null) {
             requestBody.groupNumber = groupNumber;
         }
         
-        const response = await fetch(`${API_BASE_URL}/Auth/login`, {
+        const response = await fetch(`${API_BASE}/Auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
