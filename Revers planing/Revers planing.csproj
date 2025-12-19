@@ -39,4 +39,8 @@
       <None Remove="Frontend\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Backend\" />
+    </ItemGroup>
+
 </Project>

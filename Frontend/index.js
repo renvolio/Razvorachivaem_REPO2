@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5228/api";
+const API_BASE = "/api";
 
 let appData = {
     subjects: [],

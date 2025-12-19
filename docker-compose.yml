@@ -1,0 +1,46 @@
+﻿networks:
+  dev:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - "80:80" 
+    volumes:
+      - './nginx.conf:/etc/nginx/nginx.conf'
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - dev
+
+  backend:
+    build:
+      context: ./backend 
+   
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+    depends_on:
+      - db
+    networks:
+      - dev
+
+  frontend:
+    build:
+      context: ./frontend
+    networks:
+      - dev
+
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: revers_planing 
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - dev
+
+volumes:
+  postgres_data:

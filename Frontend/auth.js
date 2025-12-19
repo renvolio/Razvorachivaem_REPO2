@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5228/api";
+const API_BASE = "/api";
 
 async function attemptLogin(email, pwd, groupNumber = null) {
     try {
