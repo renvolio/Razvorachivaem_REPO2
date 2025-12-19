@@ -24,7 +24,19 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Frontend\" />
+      <Compile Remove="Frontend\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Frontend\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Frontend\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Frontend\**" />
     </ItemGroup>
 
 </Project>
