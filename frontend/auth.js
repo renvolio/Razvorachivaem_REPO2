@@ -1,4 +1,4 @@
-const API_BASE = "http://194.67.124.204:8080/api";
+const API_BASE = "/api";
 
 async function attemptLogin(email, pwd, groupNumber = null) {
     try {
