@@ -1,4 +1,4 @@
-const API_BASE = "http://194.67.124.204:8080/api";
+const API_BASE = "/api";
 
 async function attemptLogin(email, pwd, groupNumber = null) {
     try {
@@ -12,7 +12,7 @@ async function attemptLogin(email, pwd, groupNumber = null) {
             requestBody.groupNumber = groupNumber;
         }
         
-        const response = await fetch(`${API_BASE_URL}/Auth/login`, {
+        const response = await fetch(`${API_BASE}/Auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
