@@ -380,7 +380,7 @@ function renderTaskNodes(tasks) {
         const endDate = t.endDate ? new Date(t.endDate).toLocaleDateString('ru-RU') : 'Не указано';
 
         node.innerHTML = `
-            <div class="task-header">${t.description || t.name}</div>
+            <div class="task-header">${t.name || t.description || "Без названия"}</div>
             <div>Ответственный: <b>${respName}</b></div>
             <div class="task-dates">Начало: ${startDate}</div>
             <div class="task-dates">Конец: ${endDate}</div>
@@ -547,10 +547,10 @@ function showTaskDetails(task) {
             <label style="margin-top:10px; display:block;">Длительность (сколько времени нужно):</label>
             <div style="display: flex; gap: 10px;">
                 <div style="flex:1">
-                    <input type="number" id="task-duration-days" min="0" value="${currentDays}"> <small>Дней</small>
+                    <input type="number" id="task-duration-days" min="0" step="1" value="${currentDays}" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> <small>Дней</small>
                 </div>
                 <div style="flex:1">
-                    <input type="number" id="task-duration-hours" min="0" max="23" value="${currentHours}"> <small>Часов</small>
+                    <input type="number" id="task-duration-hours" min="0" max="23" step="1" value="${currentHours}" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> <small>Часов</small>
                 </div>
             </div>
             
@@ -657,12 +657,17 @@ async function updateTask(task) {
         errorP.textContent = dateError;
         return;
     }
-    const parentStatus = parentTask ? statusToEnum(parentTask.status) : null;
-    if ((statusEnum === 1 || statusEnum === 2)
-        && parentTask
-        && !(parentStatus === 2 || parentStatus === 4)) {
-        errorP.textContent = "Нельзя начать/завершить, пока родительская задача не готова";
-        return;
+    const childTasks = appData.tasks.filter(t => t.parentTaskId == task.id);
+    if ((statusEnum === 1 || statusEnum === 2 || statusEnum === 4) && childTasks.length > 0) {
+        const unfinishedChildren = childTasks.filter(child => {
+            const s = statusToEnum(child.status);
+            return s !== 2 && s !== 4; // Не "Ready" и не "Completed"
+        });
+
+        if (unfinishedChildren.length > 0) {
+            errorP.textContent = `Нельзя начать/завершить задачу, пока не выполнены все её подзадачи (${unfinishedChildren.length} шт. еще в работе)`;
+            return;
+        }
     }
 
     const subjectId = selectSubject.value;
@@ -777,11 +782,11 @@ async function showAddTaskForm(subjectId, projectId) {
             <label style="margin-top:10px; display:block;">Оценка времени (длительность):</label>
             <div style="display: flex; gap: 10px;">
                 <div style="flex:1">
-                    <input type="number" id="task-duration-days" min="0" value="0" placeholder="Дни"> 
+                    <input type="number" id="task-duration-days" min="0" step="1" value="0" placeholder="Дни" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> 
                     <small>Дней</small>
                 </div>
                 <div style="flex:1">
-                    <input type="number" id="task-duration-hours" min="0" max="23" value="1" placeholder="Часы">
+                    <input type="number" id="task-duration-hours" min="0" max="23" step="1" value="1" placeholder="Часы" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                     <small>Часов</small>
                 </div>
             </div>
@@ -825,7 +830,7 @@ function validateTaskDates(startDate, endDate, project, parentTask) {
     }
     if (parentTask) {
         if (endDate > new Date(parentTask.startDate)) {
-            return "Задача должна быть начата строго после выполнения родительской задачи";
+            return "Задача должна быть завершена до того, как начнется родительская задача";
         }
     }
     return null;

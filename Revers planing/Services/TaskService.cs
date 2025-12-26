@@ -164,10 +164,12 @@ public class TaskService : ITaskService
             ?? throw new InvalidOperationException("проект не найден");
 
         Task_? parentTask = null;
-        var parentId = dto.ParentTaskId ?? task.ParentTaskId;
-        if (parentId.HasValue)
+        if (dto.ParentTaskId.HasValue)
         {
-            parentTask = await _context.Tasks.FindAsync(parentId.Value);
+            parentTask = await _context.Tasks.FindAsync(dto.ParentTaskId.Value);
+            // Валидация, что родитель из того же проекта/команды (желательно добавить)
+            if (parentTask != null && parentTask.ProjectId != project.Id)
+                throw new InvalidOperationException("Родительская задача из другого проекта");
         }
 
         ValidateTaskTiming(newStartDate, newEndDate, project, parentTask);
@@ -176,7 +178,7 @@ public class TaskService : ITaskService
         task.EndDate = newEndDate;
         task.StartDate = newStartDate;
         task.ProjectId = project.Id;
-        task.ParentTaskId = parentId;
+        task.ParentTaskId = dto.ParentTaskId;
 
         if (dto.ResponsibleStudentId.HasValue)
             task.ResponsibleStudentId = dto.ResponsibleStudentId;
@@ -251,9 +253,9 @@ public class TaskService : ITaskService
 
         if (parentTask != null)
         {
-            if (end > parentTask.EndDate)
+            if (end > parentTask.StartDate)
             {
-                throw new InvalidOperationException($"Подзадача не может заканчиваться позже родительской задачи (Дедлайн родителя: {parentTask.EndDate:d}).");
+                throw new InvalidOperationException($"Подзадача должна быть завершена до начала родительской задачи (Дедлайн родителя: {parentTask.StartDate:g}).");
             }
         }
     }
