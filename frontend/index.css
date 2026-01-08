@@ -276,3 +276,23 @@ input[type="text"], input[type="date"], input[type="number"] {
     border-radius: 8px;
     font-size: 1em;
 }
+.team-checkbox-list {
+    max-height: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.team-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.team-filter-item input {
+    cursor: pointer;
+}

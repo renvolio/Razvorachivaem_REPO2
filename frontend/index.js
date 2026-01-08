@@ -8,6 +8,7 @@ let appData = {
     dependencies: [],
     teamMembers: {}
 };
+let selectedTeams = new Set();
 
 const statusStyles = {
     "Planned": "planned",
@@ -16,6 +17,92 @@ const statusStyles = {
     "Expired": "expired",
     "Completed": "ready"
 };
+
+function renderTeamFilters() {
+    const container = document.getElementById("team-filters-container");
+    const list = document.getElementById("team-checkboxes");
+    list.innerHTML = "";
+
+    const teamMap = new Map();
+    appData.tasks.forEach(t => {
+        if (t.teamId && !teamMap.has(t.teamId)) {
+            teamMap.set(t.teamId, {
+                id: t.teamId,
+                number: t.teamNumber,
+                name: t.teamName
+            });
+        }
+    });
+    const teams = Array.from(teamMap.values());
+    teams.sort((a, b) => a - b);
+    if (teams.length === 0) {
+        container.style.display = "none";
+        return;
+    }
+    container.style.display = "block";
+    const allDiv = document.createElement('div');
+    allDiv.className = 'team-filter-item';
+    allDiv.innerHTML = `
+        <input type="checkbox" id="filter-all" ${selectedTeams.size === 0 ? 'checked' : ''}>
+        <label for="filter-all"><strong>Все команды</strong></label>
+    `;
+    list.appendChild(allDiv);
+
+    document.getElementById('filter-all').addEventListener('change', (e) => {
+        if (e.target.checked) {
+            selectedTeams.clear();
+            document.querySelectorAll('.group-check').forEach(cb => cb.checked = false);
+        } else {
+            // Если сняли "Все", то по логике ничего не выбрано -> пусто -> опять все? 
+            // Или можно сделать, чтобы ничего не показывалось. Обычно удобнее оставить "Все".
+            e.target.checked = true; 
+        }
+        applyFiltersAndRender(); // Вызываем вашу основную функцию отрисовки
+    });
+    teams.forEach(team => {
+        const div = document.createElement('div');
+        div.className = 'team-filter-item';
+        
+        // Красивое имя: "Команда №X (Название)" или просто "Команда №X"
+        const displayName = team.name 
+            ? `Команда №${team.number} (${team.name})` 
+            : `Команда №${team.number}`;
+
+        div.innerHTML = `
+            <input type="checkbox" class="group-check" id="team-${team.id}" value="${team.id}" ${selectedTeams.has(team.id) ? 'checked' : ''}>
+            <label for="team-${team.id}">${displayName}</label>
+        `;
+        list.appendChild(div);
+
+        div.querySelector('input').onchange = (e) => {
+            if (e.target.checked) {
+                selectedTeams.add(e.target.value);
+                document.getElementById('filter-all').checked = false;
+            } else {
+                selectedTeams.delete(e.target.value);
+                if (selectedTeams.size === 0) document.getElementById('filter-all').checked = true;
+            }
+            applyFiltersAndRender();
+        };
+    });
+}
+
+function applyFiltersAndRender() {
+    let tasksToDraw = appData.tasks;
+
+    // Если что-то выбрано в фильтре, фильтруем
+    if (selectedTeams.size > 0) {
+        tasksToDraw = appData.tasks.filter(task => {
+            // Если у задачи нет команды (null), решаем, показывать её или нет.
+            // Обычно общие задачи лучше оставлять. Если надо скрыть - уберите проверку на !task.teamId
+            if (!task.teamId) return true; 
+            return selectedTeams.has(task.teamId);
+        });
+    }
+
+    // Вызываем вашу реальную функцию отрисовки
+    renderTaskNodes(tasksToDraw);
+}
 
 function toInputLocalDateTime(isoString) {
     if (!isoString) return "";
@@ -291,10 +378,14 @@ async function loadGraphForProject(projectId, subjectId) {
                 appData.dependencies.push({ predecessorId: t.parentTaskId, successorId: t.id });
             }
         });
-        renderTaskNodes(appData.tasks);
+        selectedTeams.clear();
+        renderTeamFilters();
+        applyFiltersAndRender();
     } catch (e) {
         appData.tasks = [];
         renderTaskNodes([]);
+        document.getElementById("team-filters-container").style.display = "none";
+        console.error(e);
     }
 }
 

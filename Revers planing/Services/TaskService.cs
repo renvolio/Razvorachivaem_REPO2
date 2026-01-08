@@ -20,6 +20,7 @@ public class TaskService : ITaskService
         return await _context.Tasks
             .Include(t => t.Children)
             .Include(t => t.ResponsibleStudent)
+            .Include(t => t.Team)
             .Where(t => t.ProjectId == projectId && t.TeamId == teamId)
             .AsNoTracking()
             .ToListAsync();
@@ -41,6 +42,7 @@ public class TaskService : ITaskService
         return await _context.Tasks
             .Include(t => t.Children)
             .Include(t => t.ResponsibleStudent)
+            .Include(t => t.Team)
             .Where(t => t.ProjectId == projectId)
             .AsNoTracking()
             .ToListAsync();

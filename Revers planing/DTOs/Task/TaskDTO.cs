@@ -13,6 +13,8 @@ public class TaskDTO
     public double X { get; set; }
     public double Y { get; set; }
     public Guid TeamId { get; set; }
+    public int TeamNumber { get; set; }
+    public string? TeamName { get; set; }
     public Guid? ProjectId { get; set; }
     public Guid? ParentTaskId { get; set; }
     public Models.TaskStatus Status { get; set; }

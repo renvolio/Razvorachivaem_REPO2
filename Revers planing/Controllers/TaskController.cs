@@ -118,6 +118,8 @@ public class TaskController : ControllerBase
         X = task.X,
         Y = task.Y,
         TeamId = task.TeamId,
+        TeamName = task.Team?.Name,
+        TeamNumber = task.Team?.Number ?? 0,
         ProjectId = task.ProjectId,
         ParentTaskId = task.ParentTaskId,
         Status = task.Status,
