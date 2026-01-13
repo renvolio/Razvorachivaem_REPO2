@@ -8,7 +8,6 @@ namespace Revers_planing.Services;
 public class TaskService : ITaskService
 {
     private readonly ApplicationDbContext _context;
-    private ITaskService _taskServiceImplementation;
 
     public TaskService(ApplicationDbContext context)
     {
@@ -60,12 +59,7 @@ public class TaskService : ITaskService
             throw new UnauthorizedAccessException("студент не состоит в команде предмета");
         }
 
-        var team = student.Team;
-        if (dto.TeamId != team.Id)
-        {
-            throw new UnauthorizedAccessException("нельзя создавать задачу для другой команды");
-        }
-
+        var teamId = student.Team.Id;
         var project = await _context.Projects
             .Include(p => p.Subject)
             .FirstOrDefaultAsync(p => p.Id == projectId && p.SubjectId == subjectId)
@@ -82,7 +76,7 @@ public class TaskService : ITaskService
                 .FirstOrDefaultAsync(t => t.Id == dto.ParentTaskId.Value)
                 ?? throw new InvalidOperationException("родительская задача не найдена");
 
-            if (parentTask.TeamId != team.Id)
+            if (parentTask.TeamId != teamId)
             {
                 throw new UnauthorizedAccessException("нельзя привязать к задаче другой команды");
             }
@@ -97,7 +91,7 @@ public class TaskService : ITaskService
 
         if (dto.ResponsibleStudentId.HasValue)
         {
-            await EnsureStudentInTeam(dto.ResponsibleStudentId.Value, team.Id);
+            await EnsureStudentInTeam(dto.ResponsibleStudentId.Value, teamId);
         }
 
         var task = new Task_
@@ -108,7 +102,7 @@ public class TaskService : ITaskService
             DeadlineAssessment = dto.DeadlineAssessment,
             StartDate = calculatedStartTime,
             EndDate = dto.EndDate,
-            TeamId = dto.TeamId,
+            TeamId = teamId,
             ProjectId = projectId,
             ParentTaskId = dto.ParentTaskId,
             Status = Models.TaskStatus.Planned,
@@ -265,11 +259,16 @@ public class TaskService : ITaskService
     private async Task EnsureStudentInTeam(Guid studentId, Guid teamId)
     {
         var student = await _context.Students
-            .FirstOrDefaultAsync(s => s.Id == studentId && s.TeamId == teamId);
+            .FirstOrDefaultAsync(s => s.Id == studentId);
 
         if (student == null)
         {
-            throw new InvalidOperationException("ответственный должен быть из команды задачи");
+            throw new InvalidOperationException($"Пользователь с ID {studentId} не найден.");
+        }
+
+        if (student.TeamId != teamId)
+        {
+            throw new InvalidOperationException("Выбранный ответственный не состоит в вашей команде.");
         }
     }
 }

@@ -1,73 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\",
+  "WorkspaceRootPath": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\extensions\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\extensions\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\dtos\\task\\updatecoordsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\updatecoordsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\razvorachivaem_repo2\\revers planing\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\dtos\\task\\updatecoordsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\updatecoordsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\desktop\\projects\\razvorachivaem_repo2\\revers planing\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0662149C-335F-4047-B05A-637495703EAE}|Revers planing\\Revers planing.csproj|solutionrelative:revers planing\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -78,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,24 +90,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TaskDTO.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\TaskDTO.cs",
-              "RelativeDocumentMoniker": "Revers planing\\DTOs\\Task\\TaskDTO.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\TaskDTO.cs",
-              "RelativeToolTip": "Revers planing\\DTOs\\Task\\TaskDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBAAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Extensions\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Revers planing\\Extensions\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Extensions\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Revers planing\\Extensions\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T06:56:36.081Z",
+              "WhenOpened": "2026-01-13T11:40:39.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "TaskDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\TaskDTO.cs",
+              "RelativeDocumentMoniker": "Revers planing\\DTOs\\Task\\TaskDTO.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\TaskDTO.cs",
+              "RelativeToolTip": "Revers planing\\DTOs\\Task\\TaskDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:56:36.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Revers planing\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\appsettings.Development.json",
               "RelativeToolTip": "Revers planing\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -111,11 +127,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UpdateTaskDTO.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateTaskDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateTaskDTO.cs",
               "RelativeDocumentMoniker": "Revers planing\\DTOs\\Task\\UpdateTaskDTO.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateTaskDTO.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateTaskDTO.cs",
               "RelativeToolTip": "Revers planing\\DTOs\\Task\\UpdateTaskDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,50 +139,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TaskService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Services\\TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Services\\TaskService.cs",
               "RelativeDocumentMoniker": "Revers planing\\Services\\TaskService.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Services\\TaskService.cs",
               "RelativeToolTip": "Revers planing\\Services\\TaskService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwCwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:06:33.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T02:06:33.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SubjectController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\SubjectController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\SubjectController.cs",
               "RelativeDocumentMoniker": "Revers planing\\Controllers\\SubjectController.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\SubjectController.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\SubjectController.cs",
               "RelativeToolTip": "Revers planing\\Controllers\\SubjectController.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAtwGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:10:02.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T02:10:02.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TaskController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "Revers planing\\Controllers\\TaskController.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\TaskController.cs",
               "RelativeToolTip": "Revers planing\\Controllers\\TaskController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAnwHkAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAIA6wHkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T07:25:26.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Program.cs",
+              "RelativeDocumentMoniker": "Revers planing\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Program.cs",
+              "RelativeToolTip": "Revers planing\\Program.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwEoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:05:09.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\appsettings.json",
               "RelativeDocumentMoniker": "Revers planing\\appsettings.json",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\appsettings.json",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\appsettings.json",
               "RelativeToolTip": "Revers planing\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -174,24 +201,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Models\\Team.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Models\\Team.cs",
               "RelativeDocumentMoniker": "Revers planing\\Models\\Team.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Models\\Team.cs",
               "RelativeToolTip": "Revers planing\\Models\\Team.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:11:02.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T02:11:02.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Revers planing\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Properties\\launchSettings.json",
               "RelativeToolTip": "Revers planing\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -199,11 +225,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "SubjectService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Services\\SubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Services\\SubjectService.cs",
               "RelativeDocumentMoniker": "Revers planing\\Services\\SubjectService.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Services\\SubjectService.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Services\\SubjectService.cs",
               "RelativeToolTip": "Revers planing\\Services\\SubjectService.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAjwIMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -211,11 +237,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ProjectService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Services\\ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Services\\ProjectService.cs",
               "RelativeDocumentMoniker": "Revers planing\\Services\\ProjectService.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Services\\ProjectService.cs",
               "RelativeToolTip": "Revers planing\\Services\\ProjectService.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAjwGoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -223,11 +249,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "CreateTaskDTO.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\CreateTaskDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\CreateTaskDTO.cs",
               "RelativeDocumentMoniker": "Revers planing\\DTOs\\Task\\CreateTaskDTO.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\CreateTaskDTO.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\CreateTaskDTO.cs",
               "RelativeToolTip": "Revers planing\\DTOs\\Task\\CreateTaskDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -235,11 +261,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UpdateCoordsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateCoordsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateCoordsDTO.cs",
               "RelativeDocumentMoniker": "Revers planing\\DTOs\\Task\\UpdateCoordsDTO.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateCoordsDTO.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\DTOs\\Task\\UpdateCoordsDTO.cs",
               "RelativeToolTip": "Revers planing\\DTOs\\Task\\UpdateCoordsDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -247,23 +273,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Program.cs",
-              "RelativeDocumentMoniker": "Revers planing\\Program.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Program.cs",
-              "RelativeToolTip": "Revers planing\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwC0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:05:09.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Models\\Student.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Revers planing\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Models\\Student.cs",
               "RelativeToolTip": "Revers planing\\Models\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -271,11 +285,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Models\\Subject.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "Revers planing\\Models\\Subject.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Models\\Subject.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Models\\Subject.cs",
               "RelativeToolTip": "Revers planing\\Models\\Subject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -283,11 +297,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\ProjectController.cs",
               "RelativeDocumentMoniker": "Revers planing\\Controllers\\ProjectController.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\Desktop\\Projects\\Razvorachivaem_REPO2\\Revers planing\\Controllers\\ProjectController.cs",
               "RelativeToolTip": "Revers planing\\Controllers\\ProjectController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwCUAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
