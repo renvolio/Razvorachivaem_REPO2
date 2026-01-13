@@ -21,7 +21,8 @@ services:
     environment:
       - ASPNETCORE_URLS=http://+:5000
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     networks:
       - dev
 
