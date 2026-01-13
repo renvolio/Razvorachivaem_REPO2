@@ -27,7 +27,8 @@ async function attemptLogin(email, pwd, groupNumber = null) {
         else {
             // Пытаемся получить текст ошибки для более информативного сообщения
             const errorText = await response.text().catch(() => '');
-            console.error("Login error:", response.status, errorText);
+            console.error("%c Server Error ", "background: red; color: white; font-weight: bold;");
+            console.error(errorText);
             return null;
         }
     }

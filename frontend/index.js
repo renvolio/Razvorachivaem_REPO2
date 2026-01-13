@@ -272,11 +272,14 @@ function getAuthHeaders() {
 async function fetchJson(url, options = {}) {
     const res = await fetch(url, options);
     if (!res.ok) {
-        if (res.status === 401) {
+        const errTxt = await res.text().catch(() => "No details");
+        if (res.status === 500)
+            logServerError(errTxt);
+        else if (res.status === 401) {
             handleLogout();
             return null;
         }
-        throw new Error(`API Error: ${res.statusText} (${res.status})`);
+        throw new Error(`API Error: ${res.statusText} (${errTxt})`);
     }
     return await res.json();
 }
@@ -790,6 +793,7 @@ async function updateTask(task) {
         });
         if (!response.ok) {
             const errorText = await response.text();
+            if (response.status === 500) logServerError(errorText);
             errorP.textContent = `Ошибка: ${errorText}`;
             return;
         }
@@ -798,6 +802,11 @@ async function updateTask(task) {
     } catch (err) {
         errorP.textContent = `Ошибка сети: ${err.message}`;
     }
+}
+
+function logServerError(text) {
+    console.error("%c Server Error 500 ", "background: red; color: white; font-weight: bold; padding: 4px; border-radius: 2px;");
+    console.log(text); // Выводим текст (стек трейс)
 }
 
 function updateDeadlines(isEditMode = false) {
@@ -842,6 +851,7 @@ async function deleteTask(task, cascade = true) {
         });
         if (!response.ok) {
             const errorText = await response.text();
+            if (response.status === 500) logServerError(errorText);
             errorP.textContent = `Ошибка: ${errorText}`;
             return;
         }
@@ -966,7 +976,9 @@ async function createTask(subjectId, projectId) {
             body: JSON.stringify(payload)
         });
         if (!res.ok) {
-            errorP.textContent = `Ошибка: ${await res.text()}`;
+            const errorText = await res.text();
+            if (res.status === 500) logServerError(errorText);
+            errorP.textContent = `Ошибка: ${errorText}`;
             return false;
         }
         await loadGraphForProject(projectId, subjectId);
@@ -1071,6 +1083,7 @@ async function createSubject() {
         
         if (!response.ok) {
             const errorText = await response.text();
+            if (response.status === 500) logServerError(errorText);
             errorP.textContent = `Ошибка: ${errorText}`;
             return;
         }
@@ -1219,7 +1232,8 @@ async function createProject(subjectId) {
         
         if (!response.ok) {
             const errorText = await response.text();
-            console.error("Error response:", errorText);
+            if (response.status === 500) logServerError(errorText);
+            else console.error("Error response:", errorText);
             errorP.textContent = `Ошибка (${response.status}): ${errorText}`;
             return false;
         }
@@ -1394,6 +1408,7 @@ async function ensureTeamForSubject(subjectId) {
                 });
                 if (!resp.ok) {
                     const errText = await resp.text();
+                    if (resp.status === 500) logServerError(errText);
                     errorP.textContent = `Ошибка: ${errText}`;
                     return false;
                 }
@@ -1521,7 +1536,9 @@ async function updateProject(subjectId, projectId) {
             body: JSON.stringify(payload)
         });
         if (!res.ok) {
-            errorP.textContent = await res.text();
+            const errorText = await res.text();
+            if (res.status === 500) logServerError(errorText);
+            errorP.textContent = errorText;
             return false;
         }
         await loadProjects(subjectId); // Обновляем список и граф
@@ -1543,7 +1560,9 @@ async function deleteProject(subjectId, projectId) {
             document.getElementById("modal").style.display = "none";
             await loadProjects(subjectId);
         } else {
-            alert(await res.text());
+            const errorText = await res.text();
+            if (res.status === 500) logServerError(errorText);
+            alert(errorText);
         }
     } catch (e) {
         alert(e.message);
@@ -1635,7 +1654,9 @@ async function updateSubject(subjectId) {
             body: JSON.stringify(payload)
         });
         if (!res.ok) {
-            errorP.textContent = await res.text();
+            const errorText = await res.text();
+            if (res.status === 500) logServerError(errorText);
+            errorP.textContent = errorText;
             return false;
         }
         await loadSubjects();
@@ -1657,7 +1678,9 @@ async function deleteSubject(subjectId) {
             document.getElementById("modal").style.display = "none";
             location.reload();
         } else {
-            alert(await res.text());
+            const errorText = await res.text();
+            if (res.status === 500) logServerError(errorText);
+            alert(errorText);
         }
     } catch (e) {
         alert(e.message);

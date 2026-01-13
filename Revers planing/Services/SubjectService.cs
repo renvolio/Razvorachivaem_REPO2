@@ -192,11 +192,6 @@ public class SubjectService : ISubjectService
 
     private static void ValidateSubjectDates(DateTime startDate, DateTime endDate)
     {
-        if (startDate < DateTime.UtcNow.Date)
-        {
-            throw new InvalidOperationException("дата начала предмета не может быть в прошлом");
-        }
-
         if (endDate < startDate)
         {
             throw new InvalidOperationException("дата окончания предмета раньше даты начала");
