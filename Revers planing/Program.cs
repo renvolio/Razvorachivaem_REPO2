@@ -66,11 +66,11 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+        app.UseCors("AllowFrontend");
         app.UseMiddleware<ExceptionMiddleware>();
 
         app.UseHttpsRedirection();
 
-        app.UseCors("AllowFrontend");
         app.UseAuthentication();
         app.UseAuthorization();
         using (var scope = app.Services.CreateScope())

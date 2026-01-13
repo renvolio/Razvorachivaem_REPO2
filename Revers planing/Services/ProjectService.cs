@@ -147,11 +147,6 @@ public class ProjectService : IProjectService
 
     private static void ValidateProjectDates(DateTime startDate, DateTime endDate, Subject subject)
     {
-        if (startDate < DateTime.UtcNow.Date)
-        {
-            throw new InvalidOperationException("дата начала проекта не может быть в прошлом");
-        }
-
         if (endDate < startDate)
         {
             throw new InvalidOperationException("дата окончания проекта раньше даты начала");
