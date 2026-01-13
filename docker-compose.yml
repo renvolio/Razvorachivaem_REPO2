@@ -40,6 +40,11 @@ services:
       POSTGRES_PASSWORD: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d revers_planing"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     networks:
       - dev
 
