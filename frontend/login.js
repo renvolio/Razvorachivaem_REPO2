@@ -12,12 +12,15 @@ form.addEventListener("submit", async (e) => {
     const password = passInput.value;
     const groupNumber = groupNumberInput.value ? parseInt(groupNumberInput.value) : null;
     
-    const authToken = await attemptLogin(email, password, groupNumber);
-    if (authToken) {
-        localStorage.setItem("authToken", authToken);
+    const res = await attemptLogin(email, password, groupNumber);
+    if (res.success) {
+        localStorage.setItem("authToken", res.token);
         window.location.href = "index.html";
     }
-    else errorMsg.textContent = "Неверный email и/или пароль. Для студентов укажите номер группы.";
+    else {
+        errorMsg.style.whiteSpace = "pre-wrap";
+        errorMsg.textContent = (res.error) ? `Ошибка: ${res.error}` : "Неизвестная ошибка";
+    }
 });
 
 if (localStorage.getItem("authToken"))

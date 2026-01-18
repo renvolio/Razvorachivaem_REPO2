@@ -22,19 +22,28 @@ async function attemptLogin(email, pwd, groupNumber = null) {
         
         if (response.ok) {
             const data = await response.json();
-            return data.token;
+            return {
+                success: true,
+                token: data.token
+            };
         }
         else {
             // Пытаемся получить текст ошибки для более информативного сообщения
             const errorText = await response.text().catch(() => '');
             console.error("%c Server Error ", "background: red; color: white; font-weight: bold;");
             console.error(errorText);
-            return null;
+            return {
+                success: false,
+                error: errorText || `Ошибка сервера: ${response.status}`
+            };
         }
     }
     catch (error) {
         console.error("Authorization error: ", error);
-        return null;
+        return {
+            success: false,
+            error: "Ошибка сети. Проверьте адрес API."
+        };
     }
 }
 

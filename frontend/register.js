@@ -41,25 +41,22 @@ async function attemptRegister(userData) {
             body: JSON.stringify(userData)
         });
 
-        if (response.ok) {
-            return true;
-        } else {
-            const errorData = await response.json().catch(() => ({ message: 'Ошибка сервера' }));
-            if (errorData.errors && Object.values(errorData.errors).length > 0) {
-                 errorMsg.textContent = "Ошибка регистрации: " + Object.values(errorData.errors).flat().join('; ');
-            } else {
-                 const errorText = await response.text();
-                 if (errorText.includes('емаил')) {
-                     errorMsg.textContent = "Ошибка: такой Email уже занят.";
-                 } else if (errorText.includes('групп')) {
-                     errorMsg.textContent = "Ошибка: студент должен указать номер группы.";
-                 } else {
-                     errorMsg.textContent = "Ошибка регистрации: " + (errorData.message || 'Неизвестная ошибка.');
-                 }
-            }
-            return false;
+        if (response.ok) return true;
+
+        let serverMsg = "Неизвестная ошибка сервера";
+        const type = response.headers.get("content-type");
+        if (type && type.includes("application/json")) {
+            const errorData = await response.json();
+            serverMsg = (errorData.errors) ? Object.values(errorData.errors).flat().join("; ") : (errorData.message || JSON.stringify(errorData));
         }
-    } catch (error) {
+        else serverMsg = await response.text();
+
+        errorMsg.textContent = `Ошибка: ${serverMsg}`;
+        errorMsg.style.whiteSpace = "pre-wrap";
+        return false;
+    }
+    catch (error) {
+        console.error(error);
         errorMsg.textContent = "Ошибка сети. Проверьте адрес API.";
         return false;
     }

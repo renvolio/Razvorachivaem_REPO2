@@ -71,7 +71,7 @@ public class AuthService : IAuthService
     {
         var user = await _context.Users
             .AsNoTracking()
-            .FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception("пользователь не найден");
+            .FirstOrDefaultAsync(u => u.Email == email) ?? throw new InvalidOperationException("пользователь не найден");
 
 
     // проверяем пароль 
@@ -79,7 +79,7 @@ public class AuthService : IAuthService
 
         if (result == false)
         {
-            throw new Exception("не правильный пароль"); 
+            throw new InvalidOperationException("не правильный пароль"); 
         }
 
         string role;
@@ -93,11 +93,11 @@ public class AuthService : IAuthService
         else
         {
             var student = await _context.Students
-                .FirstOrDefaultAsync(s => s.Id == user.Id) ?? throw new Exception("Студент не найден");
+                .FirstOrDefaultAsync(s => s.Id == user.Id) ?? throw new InvalidOperationException("Студент не найден");
 
             if (!groupNumber.HasValue)
             {
-                throw new InvalidOperationException(" нужно указать номер группы для входа студента");
+                throw new InvalidOperationException("нужно указать номер группы для входа студента");
             }
 
             if (student.GroupNumber == 0)
